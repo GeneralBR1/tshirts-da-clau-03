@@ -17,7 +17,7 @@ header {
   color: #fff;
   text-align: center;
   padding: 20px;
-  font-size: 26px;
+  font-size: 28px;
   letter-spacing: 2px;
 }
 
@@ -35,10 +35,15 @@ header {
 
 .product {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.03);
 }
 
 .product img {
@@ -54,21 +59,35 @@ header {
   color: green;
   font-size: 20px;
   font-weight: bold;
-  margin: 10px 0;
 }
 
 .btn {
   display: inline-block;
+  margin-top: 10px;
   background: #25D366;
   color: #fff;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
 }
 
 .btn:hover {
   background: #1ebe5d;
+}
+
+/* Botão flutuante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 18px;
+  padding: 12px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
 footer {
@@ -93,7 +112,7 @@ footer {
 
     <!-- PRODUTO 1 -->
     <div class="product">
-      <img src="https://via.placeholder.com/300" alt="Camiseta Preta">
+      <img src="imagens/camiseta-preta.jpg" alt="Camiseta Preta">
       <h3>Camiseta Preta Premium</h3>
       <div class="price">R$ 79,90</div>
       <a class="btn" href="https://wa.me/5511999999999?text=Olá,%20quero%20comprar%20a%20Camiseta%20Preta%20Premium%20por%20R$%2079,90" target="_blank">
@@ -103,7 +122,7 @@ footer {
 
     <!-- PRODUTO 2 -->
     <div class="product">
-      <img src="https://via.placeholder.com/300" alt="Camiseta Branca">
+      <img src="imagens/camiseta-branca.jpg" alt="Camiseta Branca">
       <h3>Camiseta Branca Estilosa</h3>
       <div class="price">R$ 69,90</div>
       <a class="btn" href="https://wa.me/5511999999999?text=Olá,%20quero%20comprar%20a%20Camiseta%20Branca%20Estilosa%20por%20R$%2069,90" target="_blank">
@@ -113,7 +132,7 @@ footer {
 
     <!-- PRODUTO 3 -->
     <div class="product">
-      <img src="https://via.placeholder.com/300" alt="Camiseta Estampada">
+      <img src="imagens/camiseta-estampada.jpg" alt="Camiseta Estampada">
       <h3>Camiseta Estampada</h3>
       <div class="price">R$ 89,90</div>
       <a class="btn" href="https://wa.me/5511999999999?text=Olá,%20quero%20comprar%20a%20Camiseta%20Estampada%20por%20R$%2089,90" target="_blank">
@@ -123,6 +142,11 @@ footer {
 
   </div>
 </div>
+
+<!-- BOTÃO FIXO -->
+<a class="whatsapp-float" href="https://wa.me/5511999999999" target="_blank">
+  WhatsApp
+</a>
 
 <footer>
   © 2026 RC Store - Todos os direitos reservados
